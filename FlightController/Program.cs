@@ -3,13 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Airport.Models;
+using Airport.Controller;
 
-namespace FlightController
+namespace Airport
 {
     class Program
     {
         static void Main(string[] args)
         {
+
+        
+            ClientController clientController = new ClientController();
+            clientController.mainMenu();
         }
     }
 }

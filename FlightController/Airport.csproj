@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{161BBD1F-ECA0-403D-9AB7-EFFC883D5599}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>FlightController</RootNamespace>
-    <AssemblyName>FlightController</AssemblyName>
+    <RootNamespace>Airport</RootNamespace>
+    <AssemblyName>Airport</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,11 +42,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\ClientController.cs" />
+    <Compile Include="Controller\CustomerController.cs" />
+    <Compile Include="Controller\FlightController.cs" />
+    <Compile Include="Controller\ICustomerController.cs" />
+    <Compile Include="Controller\IFlightController.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Flight.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
